@@ -140,5 +140,5 @@ export const typefaceEntries = [
 export const footerLinks = [
   { label: 'Instagram', href: 'https://instagram.com' },
   { label: 'Privacy policy', href: '#/privacy' },
-  { label: 'mail(at)outlandtype.com', href: 'mailto:mail@outlandtype.com' },
+  { label: 'outland(at)mail.com', href: 'mailto:outland@mail.com' },
 ]
