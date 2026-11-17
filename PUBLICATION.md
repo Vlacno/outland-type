@@ -41,7 +41,7 @@ if ($LASTEXITCODE -ne 0 -or
     throw 'Start in the original repository root.'
 }
 $destination = [IO.Path]::GetFullPath(
-    (Join-Path (Split-Path -Parent $source) 'exil-type-portfolio-public'))
+    (Join-Path (Split-Path -Parent $source) 'outland-type'))
 $sourcePrefix = $source + [IO.Path]::DirectorySeparatorChar
 $destinationPrefix = $destination + [IO.Path]::DirectorySeparatorChar
 if ($destination -eq $source -or

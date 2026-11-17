@@ -2,7 +2,7 @@
 
 ## Inspected state
 
-Prepared on 10 November 2026 in `exil-type-portfolio-public`, the independent
+Prepared on 10 November 2026 in `outland-type`, the independent
 checkout of `Vlacno/outland-type`. The original historical directory was
 not edited. The repository currently has one branch, `main`.
 
@@ -214,7 +214,7 @@ still needs confirmation on the next authorized Linux run.
 [Run 43093900605](https://github.com/Vlacno/outland-type/actions/runs/43093900605)
 verified commit `1ae195d70567859c787fed5a28ba8910756efd3d` and created the
 READY staged deployment
-`https://exil-type-portfolio-headaa6rp-baronbaks-projects.vercel.app`.
+(an immutable, protected `*.vercel.app` URL).
 Promotion was never reached.
 
 The complete release-job log shows the CLI warning that Vercel Authentication

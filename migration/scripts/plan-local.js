@@ -130,7 +130,7 @@ export async function buildPlan(root = ROOT) {
     .map((asset) => ({ ...asset, paths: [...asset.paths].sort() }))
     .sort((a, b) => a.key < b.key ? -1 : a.key > b.key ? 1 : 0)
   const plan = {
-    format: 'exil-local-import-v1', target: { ...TARGET }, mode: 'drafts-only-create-missing',
+    format: 'outland-local-import-v1', target: { ...TARGET }, mode: 'drafts-only-create-missing',
     sourceFingerprints: fingerprints, documents, assets: assetManifest, warnings,
     counts: Object.fromEntries(['researchArticle', 'publication', 'typeface', 'aboutPage'].map((type) => [type, documents.filter((doc) => doc._type === type).length])),
   }
@@ -149,7 +149,7 @@ export function assetReferences(value) {
 
 export function validatePlan(plan) {
   assertTarget(plan.target)
-  if (plan.format !== 'exil-local-import-v1' || plan.mode !== 'drafts-only-create-missing') throw new Error('Unsupported import format or publication mode')
+  if (plan.format !== 'outland-local-import-v1' || plan.mode !== 'drafts-only-create-missing') throw new Error('Unsupported import format or publication mode')
   const ids = new Set(), slugs = new Set(), assetKeys = new Set(plan.assets.map((asset) => asset.key))
   const required = { researchArticle: ['title', 'summary', 'font', 'body'], publication: ['title', 'place', 'year', 'language', 'cover', 'description'], typeface: ['name', 'fontKey', 'body', 'samples'], aboutPage: ['sections'] }
   function rich(blocks) {

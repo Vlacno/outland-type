@@ -208,7 +208,7 @@ test('connected public-only check verifies published records but cannot infer mi
 })
 
 test('missing token creates a structured authorization error and preserves the previous report', async () => {
-  const directory = await mkdtemp(join(tmpdir(), 'exil-publish-auth-test-'))
+  const directory = await mkdtemp(join(tmpdir(), 'outland-publish-auth-test-'))
   try {
     await writeFile(join(directory, 'report.json'), '{"previous":true}\n')
     const result = spawnSync(process.execPath, [resolve(ROOT, 'migration/scripts/publish-portfolio.js'), '--dry-run', '--out', directory], {
@@ -227,7 +227,7 @@ test('missing token creates a structured authorization error and preserves the p
 })
 
 test('offline dry-run CLI works with network disabled, reports unknown CMS state and prints no token', async () => {
-  const directory = await mkdtemp(join(tmpdir(), 'exil-publish-test-'))
+  const directory = await mkdtemp(join(tmpdir(), 'outland-publish-test-'))
   try {
     const guard = join(directory, 'no-network.mjs')
     await writeFile(guard, `import http from 'node:http'; import https from 'node:https'; import net from 'node:net'; import {syncBuiltinESMExports} from 'node:module';

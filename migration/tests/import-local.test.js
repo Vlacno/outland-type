@@ -155,7 +155,7 @@ test('apply requires explicit target, reviewed plan hash, warning acknowledgment
 })
 
 test('real dry-run CLI works with network transports disabled and never prints a token', async () => {
-  const directory = await mkdtemp(join(tmpdir(), 'exil-import-test-'))
+  const directory = await mkdtemp(join(tmpdir(), 'outland-import-test-'))
   try {
     const guard = join(directory, 'no-network.mjs')
     await writeFile(guard, `import http from 'node:http'; import https from 'node:https'; import net from 'node:net'; import {syncBuiltinESMExports} from 'node:module';

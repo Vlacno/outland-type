@@ -1,6 +1,6 @@
 # Release discovery failure: 0032fa9
 
-Date: 11 November 2026. Independent checkout: `exil-type-portfolio-public`.
+Date: 11 November 2026. Independent checkout: `outland-type`.
 
 ## Evidence and cause
 
