@@ -28,6 +28,6 @@ export const aboutSections = [
     id: 'contact', title: 'Contact', paragraphs: [
       'For enquiries about type design, graphic design or the research project:',
     ],
-    email: 'exil-type@mail.com',
+    email: 'mail@outlandtype.com',
   },
 ]

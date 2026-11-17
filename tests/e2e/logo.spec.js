@@ -1,16 +1,16 @@
 import { test, expect } from '../fixtures'
 
 for (const width of [1280, 390]) {
-  test(`compact EXIL Type logo and menu retain the original corners at ${width}px`, async ({ page }) => {
+  test(`compact Outland Type logo and menu retain the original corners at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 844 })
     await page.goto('/#/about')
-    const logo = page.getByRole('img', { name: 'EXIL Type', exact: true })
+    const logo = page.getByRole('img', { name: 'Outland Type', exact: true })
     await expect(logo).toBeVisible()
     // Vite may inline small SVGs as data URLs, so verify the asset dimensions.
-    await expect.poll(() => logo.evaluate((image) => [image.naturalWidth, image.naturalHeight])).toEqual([92, 23])
+    await expect.poll(() => logo.evaluate((image) => [image.naturalWidth, image.naturalHeight])).toEqual([156, 21])
     const image = await logo.boundingBox()
     const frame = await page.locator('.header__logo').boundingBox()
-    expect(frame.width / frame.height).toBeCloseTo(114 / 37, 2)
+    expect(frame.width / frame.height).toBeCloseTo(182 / 45, 2)
     expect(frame.height).toBe(width > 1000 ? 50 : 48)
     expect(image.x).toBeGreaterThan(frame.x + 10)
     expect(image.y).toBeGreaterThan(frame.y + 5)
@@ -26,7 +26,7 @@ for (const width of [1280, 390]) {
       const radius = await page.locator('.header__menu-toggle').evaluate((button) => parseFloat(getComputedStyle(button).borderTopLeftRadius))
       expect(radius).toBeCloseTo(expectedRadius, 2)
     }
-    await page.getByRole('link', { name: 'EXIL Type', exact: true }).click()
+    await page.getByRole('link', { name: 'Outland Type', exact: true }).click()
     await expect(page).toHaveURL(/#\/$/)
   })
 }

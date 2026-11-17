@@ -1,4 +1,4 @@
-# EXIL Type Portfolio
+# Outland Type Portfolio
 
 A typography and editorial portfolio built with **React 19 and Vite 8**, with
 an optional **Sanity CMS** and a standalone editing Studio. Adapted from a

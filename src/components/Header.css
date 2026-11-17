@@ -15,7 +15,7 @@
 
 .header__logo {
   display: inline-flex;
-  width: calc(50px * 114 / 37);
+  width: calc(50px * 182 / 45);
   height: 50px;
   flex: 0 0 auto;
   align-items: center;
@@ -28,9 +28,9 @@
 
 .header__logo img {
   display: block;
-  width: calc(100% * 92 / 114);
+  width: calc(100% * 156 / 182);
   height: auto;
-  transform: translateY(2px);
+  transform: translateY(12%);
 }
 
 .header__menu-toggle { display: none; }
@@ -107,7 +107,7 @@
     pointer-events: none;
     transform: translateY(-100%);
   }
-  .header__logo { width: calc(48px * 114 / 37); height: 48px; }
+  .header__logo { width: calc(48px * 182 / 45); height: 48px; }
   .header__menu-toggle {
     display: flex;
     width: 48px;

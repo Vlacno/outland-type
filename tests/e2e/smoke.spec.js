@@ -32,7 +32,7 @@ test('about displays the project introduction and expandable contact information
   await page.goto('/#/about')
   await expect(page.getByRole('region', { name: 'About', exact: true })).toContainText('This project is a PhD research project')
   await page.getByRole('main').getByRole('button', { name: 'Contact', exact: true }).click()
-  await expect(page.getByRole('region', { name: 'Contact', exact: true }).getByRole('link', { name: 'exil-type@mail.com', exact: true })).toHaveAttribute('href', 'mailto:exil-type@mail.com')
+  await expect(page.getByRole('region', { name: 'Contact', exact: true }).getByRole('link', { name: 'mail@outlandtype.com', exact: true })).toHaveAttribute('href', 'mailto:mail@outlandtype.com')
 })
 
 test('research cards open an article', async ({ page }) => {

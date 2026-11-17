@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { navLinks } from '../data/content'
-import logo from '../assets/exil-type-logo.svg'
+import logo from '../assets/outland-type-logo.svg'
 import './Header.css'
 
 function Header({ path, navigate }) {
@@ -84,7 +84,7 @@ function Header({ path, navigate }) {
           navigate('/')
         }}
       >
-        <img src={logo} alt="EXIL Type" />
+        <img src={logo} alt="Outland Type" />
       </a>
 
       <button
