@@ -4,7 +4,7 @@ Date: 11 November 2026. Independent checkout: `exil-type-portfolio-public`.
 
 ## Evidence and cause
 
-[The failed release job](https://github.com/Vlacno/exil-type-portfolio/actions/runs/43088570645/job/130762440054)
+[The failed release job](https://github.com/Vlacno/outland-type/actions/runs/43088570645/job/130762440054)
 checked out `0032fa93fd73a5595a3915a14ec241917d249a2a` on Ubuntu 26.04.1,
 Node 24.22.2 and Vercel CLI 65.14.0. Frontend verification passed. The release:
 

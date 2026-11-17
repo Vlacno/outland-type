@@ -9,7 +9,7 @@ The existing GitHub Actions test-only job was rerun on its original commit
 `8afb18773079a1434fa32fad8603c39c2cd2b56f`; no workflow/source was uploaded or
 changed remotely. The Ubuntu Chromium job reproduced the exact failure at
 `tests/cms/typefaces.spec.js:84`: 72 CMS tests passed, the paired heading failed.
-See [the Linux rerun](https://github.com/Vlacno/exil-type-portfolio/actions/runs/42907639456/job/130169308164).
+See [the Linux rerun](https://github.com/Vlacno/outland-type/actions/runs/42907639456/job/130169308164).
 The rerun contained lint/build/tests only and did not deploy.
 
 The demonstrated defect is in `FittedTypefaceHero`'s size calculation. It measured

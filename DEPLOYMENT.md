@@ -3,19 +3,19 @@
 ## Inspected state
 
 Prepared on 10 November 2026 in `exil-type-portfolio-public`, the independent
-checkout of `Vlacno/exil-type-portfolio`. The original historical directory was
+checkout of `Vlacno/outland-type`. The original historical directory was
 not edited. The repository currently has one branch, `main`.
 
 The existing workflow only ran checks. GitHub reported its latest check failed
 on `tests/cms/typefaces.spec.js:84`: the paired heading exceeded its container
 in Linux Chromium. Vercel nevertheless reported a successful deployment of the
 same commit (`8afb187`). Its Git integration therefore bypasses the test gate.
-See the [failed Actions job](https://github.com/Vlacno/exil-type-portfolio/actions/runs/42907639456/job/130149704707)
-and the [Vercel commit status](https://api.github.com/repos/Vlacno/exil-type-portfolio/commits/8afb18773079a1434fa32fad8603c39c2cd2b56f/status).
+See the [failed Actions job](https://github.com/Vlacno/outland-type/actions/runs/42907639456/job/130149704707)
+and the [Vercel commit status](https://api.github.com/repos/Vlacno/outland-type/commits/8afb18773079a1434fa32fad8603c39c2cd2b56f/status).
 The existing assertion and application layout have not been changed.
 
 No local Vercel project link/configuration or Vercel credentials were present.
-The GitHub status identifies `baronbaks-projects/exil-type-portfolio`; the cloud
+The GitHub status identifies `baronbaks-projects/outland-type`; the cloud
 project ID, team ID, environment values, domains and account settings cannot be
 confirmed from that public status. No Vercel dashboard/API settings were changed.
 The disabled automatic domain-assignment setting is the user's stated setup.
@@ -211,7 +211,7 @@ still needs confirmation on the next authorized Linux run.
 
 ## Staging protection investigation: run #4 (11 November 2026)
 
-[Run 43093900605](https://github.com/Vlacno/exil-type-portfolio/actions/runs/43093900605)
+[Run 43093900605](https://github.com/Vlacno/outland-type/actions/runs/43093900605)
 verified commit `1ae195d70567859c787fed5a28ba8910756efd3d` and created the
 READY staged deployment
 `https://exil-type-portfolio-headaa6rp-baronbaks-projects.vercel.app`.

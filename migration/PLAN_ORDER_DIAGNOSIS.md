@@ -4,7 +4,7 @@ Date: 11 November 2026. Scope: the independent portfolio checkout.
 
 ## Exact failure
 
-[Verify frontend job](https://github.com/Vlacno/exil-type-portfolio/actions/runs/43092066064/job/130771406308)
+[Verify frontend job](https://github.com/Vlacno/outland-type/actions/runs/43092066064/job/130771406308)
 failed in the offline step on commit `453f8a1`. The complete 162,991-character job
 log was retrieved and saved outside the repository as
 `github-453f8a1-complete.log`; the failure was not diagnosed from the shortened

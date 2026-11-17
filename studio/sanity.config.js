@@ -5,7 +5,7 @@ import { schemaTypes } from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'Font Portfolio Admin',
+  title: 'Outland Type Admin',
 
   ...sanityProject,
 
